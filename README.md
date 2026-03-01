@@ -34,11 +34,12 @@ The goal is not just to solve machines, but to understand *why* vulnerabilities 
 
 ## 📂 Completed Machines
 
-### 🔹 Beginner
 
-| Machine | Skills Demonstrated | Status |
-|---------|--------------------|--------|
-| Lookup  | Web enum, Hydra, Metasploit RCE, SUID analysis, SSH brute force, sudo misconfiguration | Rooted |
+| Machine       | Skills Demonstrated | Status |
+|--------------|--------------------|--------|
+| Lookup       | Web enum, Hydra, Metasploit RCE, SUID analysis, SSH brute force, sudo misconfiguration | Rooted |
+| Bricks Heist | WordPress RCE (CVE-2024-25600), REST API exploitation, Reverse shell handling, systemd service analysis, Persistence investigation, Multi-layer encoding (Hex → Base64), Blockchain OSINT, Threat attribution | Rooted |
+
 
 More machines coming soon.
 
@@ -46,27 +47,46 @@ More machines coming soon.
 
 ## 🛠 Tools & Technologies
 
-- Nmap
-- Gobuster
-- Hydra
-- Metasploit
-- Linux Privilege Escalation Techniques
+### Recon & Enumeration
+- Nmap (Service & version detection)
+- Gobuster (Directory brute forcing)
+- Manual WordPress enumeration
+- REST API inspection
+
+### Exploitation
+- curl (Manual HTTP exploitation & JSON payload crafting)
+- CVE analysis & public exploit adaptation
+- Reverse shell techniques (Bash TCP)
+- Netcat (Listener setup & shell handling)
+
+### Post-Exploitation
+- Linux process analysis (`ps`, `pgrep`)
+- systemd service investigation (`systemctl`)
+- Log file discovery & analysis
+- File system enumeration
+- Privilege escalation fundamentals
+
+### Malware & Persistence Analysis
+- Service persistence inspection
+- Binary inspection (`file`, `strings`)
+- Config/log discovery
+- Multi-layer encoding analysis (Hex → Base64 → Base64)
+
+### Scripting & Decoding
+- Bash pipelines
+- `xxd`
+- `base64`
+- Pattern searching with `grep`
+
+### Threat Intelligence & OSINT
+- Blockchain wallet tracing
+- Cryptocurrency transaction analysis
+- Threat group attribution research
+
+### Core Technologies
+- Linux
 - Bash
-- Python (for enumeration & scripting)
-
----
-
-## 🎯 Career Direction
-
-Focused on developing expertise in:
-
-- Offensive Security
-- Cloud Security
-- Security Architecture
-- Threat Modeling
-- Privilege Escalation Techniques
-
-Long-term objective: Build deep technical foundations to move toward Security Architecture and leadership roles.
+- Python (basic scripting & automation)
 
 ---
 
